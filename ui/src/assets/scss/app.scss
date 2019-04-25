@@ -1,0 +1,16 @@
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "customVariables";
+@import "fileBrowser";
+
+.glass{
+    background-color:rgba(0,0,0,0.65);
+}
+
+.cover{
+    position: absolute;
+    top:0; bottom:0; left:0; right:0;
+    z-index:1000;
+    text-align:center;
+    
+}

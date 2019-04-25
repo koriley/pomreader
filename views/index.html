@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Kevin O'Riley & Scott Sauer">
+    <title>DDM</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="theme-default">
+
+    
+    <div class="mainView">
+    
+        <div class="parent">
+            <form>
+                <div class="form-group fileSelector file1 ">
+                    <label for="pomfile1">6.1 pom.xml</label>
+                    <input type="file" data-to="f1" name="file1" class="form-control-file" id="pomfile1" accept=".xml">
+                </div>
+            </form>
+            <form>
+                <div class="form-group file2 fileSelector">
+                    <label for="pomfile2">6.5 pom.xml</label>
+                    <input type="file" data-to="f2" name="file2" class="form-control-file" id="pomfile2" accept=".xml">
+                </div>
+            </form>
+            <div class="compButton">
+                <button type="button" class="btn btn-info compare">Compare</button>
+            </div>
+        </div>
+    
+    
+        <div class="resaultParent">
+            <form>
+                <div class="form-group resaultStyle">
+                    <h4> 6.1 Pom File</h4>
+                    <textarea class="f1 " rows="25" cols="40" readonly="readonly"></textarea>
+                </div>
+            </form>
+            <form>
+                <div class="form-group resaultStyle">
+                    <h4>6.5 Pom File</h4>
+                    <textarea class="f2 " rows="25" cols="40" readonly="readonly"> </textarea>
+                </div>
+            </form>
+            <!-- <div class="f1 resaultStyle"></div>
+            <div class="f2 resaultStyle"></div> -->
+        </div>
+    
+    
+        <div class="glass cover popup">
+    
+            <form>
+                <div class="form-group popStyle">
+                    <h4> In 6.1 not 6.5</h4>
+                    <textarea class="sub " rows="25" cols="40" readonly="readonly"></textarea>
+                </div>
+            </form>
+            <form>
+                <div class="form-group popStyle">
+                    <h4>in 6.5 not 6.1</h4>
+                    <textarea class="add " rows="25" cols="40" readonly="readonly"> </textarea>
+                </div>
+            </form>
+            <div class="closeButton">
+                <button type="button" class="btn btn-info doClose">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="assets/js/jquery.js" type="text/javascript"></script> -->
+
+    <script src="assets/js/jquery.js" type="text/javascript" onload="window.$ = window.jQuery = module.exports;"></script>
+
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+    <!-- <script src="assets/js/libs/popper.js"></script>
+    <script src="assets/js/libs/bootstrap.js"></script>
+    <script src="assets/js/libs/require.js"></script> -->
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- <script>
+            var app = require('electron').remote;
+            var dialog = app.dialog;
+        </script> -->
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+{
+  "name": "pomreader",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "your app description",
+  "author": "Kevin O'Riley knoriley@basspro.com",
+  "main": "./app.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+   
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.4",
+    "diff-match-patch-node": "^0.9.1",
+    "text-file-diff": "^1.0.6"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  }
+}
